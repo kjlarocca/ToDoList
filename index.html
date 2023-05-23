@@ -8,48 +8,82 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<h1>To-Do for Weekend Activities</h1>
 <ul id="myList">
-    <h1>To-Do for Weekend Activities</h1>
-    <ol>              
-        <li>Research:</li>
+    <li>
+        Research:
         <ul> 
             <li>things to do</li>
             <li>check the weather</li>
             <li>discuss toddler wagon options</li>
         </ul>
-        <li>Purchase:</li>
-            <ul>
-             <li>toddler sunhat</li>
-             <li>some sort of wagon</li>
-            </ul>
-        <li>Domestic Tasks:</li>
-            <ol>
-             <li>Pack Diaper Bag</li>
-             <ul>
-                <li> diapers </li>
-                <li> wipes </li>
-                <li> toys </li>
-                <li> sanitizing wipes </li>
-                <li> hand sanitizer </li>
-                <li> chapstick </li>
-                <li> sunscreen </li>
-                <li> extra outfit </li>
-                <li> pacifier with clip </li>
-             </ul>
-            <li>Pack Snack Bag</li>
-             <ul>
-                <li>toddler snacks</li>
-                <li>parent snacks</li>
-                <li>sippy cup</li>
-             </ul>
-            </ol>
+        <div>
+            <form class="addItemForm">
+                <input type="text" class="itemInput" placeholder="Enter an item">
+                <button type="submit">Add</button>
+            </form>
+            <ul class="itemList"></ul>
+        </div> 
+    </li>
+    <li>
+        Purchase:
+        <ul>
+            <li>toddler sunhat</li>
+            <li>some sort of wagon</li>
+            <div>
+                <form class="addItemForm">
+                    <input type="text" class="itemInput" placeholder="Enter an item">
+                    <button type="submit">Add</button>
+                </form>
+                <ul class="itemList"></ul>
+            </div> 
+        </ul>
+    </li>
+    <li>
+        Domestic Tasks:
+        <ol>
+            <li>
+                Pack Diaper Bag
+                <ul>
+                    <li>diapers</li>
+                    <li>wipes</li>
+                    <li>toys</li>
+                    <li>sanitizing wipes</li>
+                    <li>hand sanitizer</li>
+                    <li>chapstick</li>
+                    <li>sunscreen</li>
+                    <li>extra outfit</li>
+                    <li>pacifier with clip</li>
+                    <form class="addItemForm">
+                        <input type="text" class="itemInput" placeholder="Enter an item">
+                        <button type="submit">Add</button>
+                    </form>
+                    <ul class="itemList"></ul>
+                </ul>
+            </li>
+            <li>
+                Pack Snack Bag
+                <ul>
+                    <li>toddler snacks</li>
+                    <li>parent snacks</li>
+                    <li>sippy cup</li>
+                    <form class="addItemForm">
+                        <input type="text" class="itemInput" placeholder="Enter an item">
+                        <button type="submit">Add</button>
+                    </form>
+                    <ul class="itemList"></ul>
+                </ul>
+            </li>
+        </ol>
+    </li>
+</ul>
 <h2>THEN</h2>
 <h3>Enjoy your time in public with said toddler</h3>
 <ul>
     <li>Have an alcoholic beverage (or two) at lunch</li>
     <li>*Try not to cry*</li>
 </ul>
-</ul>
-<script src="./index.js"></script> 
+
+<script src="./index.js"></script>
 </body>
 </html>
